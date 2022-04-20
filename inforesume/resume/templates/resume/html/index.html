@@ -1,0 +1,294 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css"  href='{% static "resume/css/style.css" %}' rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="shortcut icon" href="{%static 'resume/img/logo.png'%}" type="image/x-icon">
+    <title>Inforesume</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="#" >Inforesume</a>
+            </div>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" >Главная</a>
+                <a class="nav__link" href="#" >Резюме</a>
+                <a class="nav__link" href="#" >О нас</a>
+                <a class="nav__link" href="#" >Блог</a>
+                <a class="nav__link" href="#" >Контакты</a>
+            </nav>
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Меню</span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Конструктор резюме</h1>
+                <a class="btn" href="#">Создать резюме</a>
+            </div>
+        </div>
+        <div class="intro_under">
+            <div class="container">
+                <div class="intro_under_inner">
+                    <div class="intro_under_item"><a href="#" data-scroll="#about" class="intro_under_links">Что такое конструктор</a></div>
+                    <div class="intro_under_item"><a href="#" data-scroll="#benefits" class="intro_under_links">Преимущества</a></div>
+                    <div class="intro_under_item"><a href="#" data-scroll="#creation" class="intro_under_links">Процесс создания</a></div>
+                    <div class="intro_under_item"><a href="#" data-scroll="#footer" class="intro_under_links">Связаться</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Конструктор резюме</h2>
+                <div class="section__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quam accusantium, placeat laborum iste vel iure quasi obcaecati nihil dolore quod praesentium ab, beatae voluptatibus numquam doloribus assumenda ea. Id officiis voluptatum atque quae sint tempora eos repudiandae, illo quisquam perferendis similique eveniet. Nostrum in illum animi sunt corporis aperiam?</p>
+                </div>
+            </div>
+            <div class="about_pic">
+                <div class="about_pic__item">
+                    <div class="about_pic__inner">
+                        <div class="about_pic__img">
+                            <img src="{%static 'resume/img/about/template.jpg'%}" alt="">
+                        </div>
+                        <div class="about_pic__text">Lorem</div>
+                    </div>
+                </div>
+                <div class="about_pic__item">
+                    <div class="about_pic__inner">
+                        <div class="about_pic__img">
+                            <img src="{%static 'resume/img/about/template.jpg'%}" alt="">
+                        </div>
+                        <div class="about_pic__text">Lorem</div>
+                    </div>
+                </div>
+                <div class="about_pic__item">
+                    <div class="about_pic__inner">
+                        <div class="about_pic__img">
+                            <img src="{%static 'resume/img/about/template.jpg'%}" alt="">
+                        </div>
+                        <div class="about_pic__text">Lorem</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="benefits">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Преимущества</h2>
+            </div>
+            <div class="benefits">
+                <div class="benefits__item  benefits__item--border">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/1.png'%}" alt="">
+                    <div class="benefits__title">Доступность</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="benefits__item  benefits__item--border">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/2.png'%}" alt="">
+                    <div class="benefits__title">Адаптивность</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="benefits__item  benefits__item--border">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/3.png'%}" alt="">
+                    <div class="benefits__title">Большой выбор шаблонов</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="benefits__item  ">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/4.png'%}" alt="">
+                    <div class="benefits__title">Помощь</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="benefits__item">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/5.png'%}" alt="">
+                    <div class="benefits__title">Удобный интерфейс</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+                <div class="benefits__item">
+                    <img class="benefits__icon" src="{%static 'resume/img/benefits/6.png'%}" alt="">
+                    <div class="benefits__title">Возможность выделить только главное</div>
+                    <div class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="creation">
+        <div class="container" >
+            <div class="section__header">
+                <h2 class="section__title">Процесс создания</h2>
+                <div class="section__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="creation">
+                <div class="creation__item">
+                    <img class="creation__img" src="{%static 'resume/img/wedo.jpg'%}" alt="">
+                </div>
+                <div class="creation__item">
+                    <div class="creation_acc">
+                        <div class="creation_acc__item" data-collapse="#creation_1">
+                            <div class="creation_acc__header">
+                                <img class="creation_acc__icon" src="{%static 'resume/img/creation/9.png'%}" alt="">
+                                <div class="creation_acc__title">Заполнение формы</div>
+                            </div>
+                            <div class="creation_acc__content" id="creation_1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="creation_acc__item " data-collapse="#creation_2">
+                            <div class="creation_acc__header">
+                                <img class="creation_acc__icon" src="{%static 'resume/img/creation/7.png'%}" alt="">
+                                <div class="creation_acc__title">Выбор шаблона резюме</div>
+                            </div>
+                            <div class="creation_acc__content" id="creation_2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="creation_acc__item" data-collapse="#creation_3">
+                            <div class="creation_acc__header">
+                                <img class="creation_acc__icon" src="{%static 'resume/img/creation/8.png'%}" alt="">
+                                <div class="creation_acc__title">Скачивание готового резюме</div>
+                            </div>
+                            <div class="creation_acc__content" id="creation_3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" >
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Блог</h2>
+            </div>
+            <div class="blog">
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="{%static 'resume/img/blog/1.jpg'%}" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Jan
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                        <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="{%static 'resume/img/blog/2.jpg'%}" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Jan
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                        <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="{%static 'resume/img/blog/3.jpg'%}" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Jan
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </div>
+                        <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="container">
+                  <div class="footer__inner">
+                    <div class="footer__info">
+                      <div class="footer__title">
+                        Связаться с нами
+                      </div>
+                      <ul class="footer__list">
+                        <li class="footer__adress">Телефон: +996 (777) 77-77-77</li>
+                        <li class="footer__adress">Почта: inf@gmail.com</li>
+                        <li class="footer__adress">Адрес: 2а ул. Чолпон-Атинская, Бишкек</li>
+                      </ul>
+                    </div>
+                    <div class="footer__map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.6758169490386!2d74.67486091538804!3d42.85857791146571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8217752924b%3A0x334bbc4af21f45d8!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3QvtC1INC_0YDQtdC00L_RgNC40Y_RgtC40LUgItCY0L3RhNC-0LrQvtC8IiDQv9GA0Lgg0JzQuNC90LjRgdGC0LXRgNGB0YLQstC1INGG0LjRhNGA0L7QstC-0LPQviDRgNCw0LfQstC40YLQuNGPINCa0KA!5e0!3m2!1sru!2skg!4v1649954747354!5m2!1sru!2skg" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{%static 'resume/js/app.js'%}"></script>
+
+
+</body>
+</html>
