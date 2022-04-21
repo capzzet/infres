@@ -13,10 +13,21 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+
+from resume.views import custom_page_not_found_view, custom_permission_denied_view, custom_bad_request_view, \
+    custom_error_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('resume.urls'))
 ]
+handler404 = custom_page_not_found_view
+handler500 = custom_error_view
+handler403 = custom_permission_denied_view
+handler400 = custom_bad_request_view
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL ,document_root = settings.MEDIA_ROOT)
