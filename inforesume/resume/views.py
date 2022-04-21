@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from docxtpl import DocxTemplate
+from .models import *
 import os
 import mimetypes
 import pythoncom
@@ -28,11 +29,17 @@ def about(request):
     return render(request, 'resume/html/about.html',context)
 
 def blog(request):
+    posts = Blog.objects.all()
+    context = {
+        'menu': menu,
+        'posts':posts
+    }
+    return render(request, 'resume/html/blog.html',context)
+def show_blog(request,blog_id):
     context = {
         'menu': menu
     }
-    return render(request, 'resume/html/blog.html',context)
-
+    return render(request,'resume/html/blog_id.html',context=context)
 def contacts(request):
     context = {
         'menu': menu
