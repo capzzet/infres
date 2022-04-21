@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'resume.apps.ResumeConfig'
+    'resume.apps.ResumeConfig',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +64,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'resume_tags': 'resume.templates_tags.resume_tags',
+
+            }
         },
     },
 ]

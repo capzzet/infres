@@ -1,4 +1,6 @@
 {% load static %}
+{% load resume_tags %}
+{%get_menu as menu1%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +21,7 @@
                 <a href="{%url 'home'%}" >Inforesume</a>
             </div>
             <nav class="nav" id="nav">
-                {%for menu_link in menu%}
+                {%for menu_link in menu1%}
                 <a class="nav__link" href="{% url menu_link.url_name%}" >{{menu_link.title}}</a>
                 {%endfor%}
             </nav>
