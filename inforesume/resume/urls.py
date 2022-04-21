@@ -5,6 +5,6 @@ urlpatterns = [
     path('resume/', resume,name='resume'),
     path('about/', about,name='about'),
     path('blog/', blog,name='blog'),
-    path('blog/<slug:blog_id>', show_blog,name='blog_name'),
+    path('blog/<slug:blog_slug>', show_blog,name='blog_name'),
     path('contacts/', contacts,name='contacts')
 ]

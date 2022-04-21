@@ -7,4 +7,5 @@ class BlogAdmin(admin.ModelAdmin):
     list_editable = ('is_published',)
     search_fields = ('title','time_create')
     list_filter = ('is_published','time_create')
+    prepopulated_fields = {'slug':('title',)}
 admin.site.register(Blog,BlogAdmin)

@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from docxtpl import DocxTemplate
 from .models import *
 import os
@@ -17,7 +17,7 @@ def index(request):
                         {'data_scroll': '#creation', 'under_text': 'Процесс создания', },
                         {'data_scroll': '#footer', 'under_text': 'Связаться', }, ],
     }
-    return render(request, 'resume/html/index.html', context)
+    return render(request, 'resume/html/index.html', context=context)
 
 
 def about(request):
@@ -29,11 +29,16 @@ def blog(request):
     context = {
         'posts': posts
     }
-    return render(request, 'resume/html/blog.html', context)
+    return render(request, 'resume/html/blog.html', context=context)
 
 
-def show_blog(request, blog_id):
-    return render(request, 'resume/html/blog_id.html', )
+def show_blog(request, blog_slug):
+    blog = get_object_or_404(Blog,slug=blog_slug)
+    context=  {
+        'blog':blog,
+        'title':blog.title
+    }
+    return render(request,'resume/html/blog_id.html',context=context)
 
 
 def contacts(request):
